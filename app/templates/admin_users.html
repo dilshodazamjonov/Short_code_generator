@@ -1,0 +1,17 @@
+<h2>User List</h2>
+<table>
+  <tr><th>ID</th><th>Email</th><th>Action</th></tr>
+  {% for user in users %}
+    <tr>
+      <td>{{ user.id }}</td>
+      <td>{{ user.email }}</td>
+      <td><a href="/admin/ban/{{ user.id }}">Ban</a></td>
+    </tr>
+  {% endfor %}
+</table>
+
+<div>
+  {% for p in range(1, total_pages + 1) %}
+    <a href="?page={{ p }}">{{ p }}</a>
+  {% endfor %}
+</div>

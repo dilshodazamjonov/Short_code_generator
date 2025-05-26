@@ -1,0 +1,15 @@
+body {
+    font-family: Arial;
+    padding: 2rem;
+    background: #f4f4f4;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+}
+main {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
